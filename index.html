@@ -17,41 +17,47 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
   </head>
   <body>
     <header class="page-header bottom-line">
-      <div class="container page-item">
+      <div class="container page-header__container">
         <a class="logo" lang="en" href="./index.html"
-          >Web<span class="studio">Studio</span></a
+          >Web<span class="logo--black">Studio</span></a
         >
 
-        <nav class="main-nav">
+        <nav class="header-nav">
           <ul class="site-nav list">
-            <li class="item">
-              <a class="link current" href="./index.html">Студия</a>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="social-icon" width="20" height="20">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="20" height="20">
                 <use href="./images/icons/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111"
-              ><svg class="social-icon" width="20" height="20">
-                <use href="./images/icons/icons.svg#icon-tel">
-
-                </use>
-                </svg>+38 096 111 11 11
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="20" height="20">
+                <use href="./images/icons/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -72,13 +78,85 @@
             Заказать услугу
           </button>
           <div class="backdrop is-hidden" data-modal>
-            <form class="modal">
+            <div class="modal">
               <button class="modal-btn" data-modal-close type="button">
                 <svg width="11" height="11">
                   <use href="./images/icons/icons.svg#icon-x"></use>
                 </svg>
               </button>
-            </form>
+              <form class="inputs">
+                <b class="title">Оставьте свои данные, мы вам перезвоним</b>
+
+                <label class="form-label" for="user-name">
+                  <span class="form-tag">Имя</span>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                  />
+
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="/images/icons/icons.svg#icon-nameform"></use>
+                  </svg>
+                </label>
+                <label class="form-label" for="user-tel">
+                  <span class="form-tag">Телефон</span>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="/images/icons/icons.svg#icon-telform"></use>
+                  </svg>
+                </label>
+                <label class="form-label" for="user-mail">
+                  <span class="form-tag">Почта</span>
+                  <input
+                    class="form-input"
+                    type="email"
+                    autocomplete="email"
+                    name="user-mail"
+                    id="user-mail"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="/images/icons/icons.svg#icon-mailform"></use>
+                  </svg>
+                </label>
+                <label class="form-label">
+                  <span class="form-tag">Комментарий</span>
+                  <textarea
+                    class="textarea"
+                    name="textarea"
+                    placeholder="Введите текст"
+                  >
+                  </textarea>
+                </label>
+                <label class="checkbox-label" for="user-checkbox">
+                  <input
+                    class="checkbox-input hidden"
+                    name="user-checkbox"
+                    id="user-checkbox"
+                    type="checkbox"
+                  />
+                  <span class="check" role="checkbox" aria-checked="false">
+                    <svg class="check-icon" width="16" height="15">
+                      <use href="./images/icons/icons.svg#icon-mark"></use>
+                    </svg>
+                  </span>
+
+                  <span class="chekbox-tag"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="agreement-link" href="">Условия договора</a>
+                  </span>
+                </label>
+                <button class="submit-btn" type="submit">
+                  <span class="sub-text"> Отправить </span>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -86,53 +164,53 @@
       <!--Преимущества -->
       <section class="feutures">
         <div class="container">
-          <h2 class="section-title visually-hidden">Наши преимущества</h2>
+          <h2 class="feutures__title hidden">Наши преимущества</h2>
 
-          <ul class="list">
-            <li class="list-item">
-              <div class="feutures-item">
-                <svg class="feutures-icon" width="70" height="70">
+          <ul class="feutures-list list">
+            <li class="feutures-list__item">
+              <div class="feutures-list__picture">
+                <svg class="feutures-list__icon" width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Внимание к деталям</h3>
-              <p class="text">
+              <h3 class="feutures-list__title">Внимание к деталям</h3>
+              <p class="feutures-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="list-item">
-              <div class="feutures-item">
-                <svg class="feutures-icon" width="70" height="70">
+            <li class="feutures-list__item">
+              <div class="feutures-list__picture">
+                <svg class="feutures-list__icon" width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-vector"></use>
                 </svg>
               </div>
-              <h3 class="title">Пунктуальность</h3>
-              <p class="text">
+              <h3 class="feutures-list__title">Пунктуальность</h3>
+              <p class="feutures-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="list-item">
-              <div class="feutures-item">
-                <svg class="feutures-icon" width="70" height="70">
+            <li class="feutures-list__item">
+              <div class="feutures-list__picture">
+                <svg class="feutures-list__icon" width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-computer"></use>
                 </svg>
               </div>
-              <h3 class="title">Планирование</h3>
-              <p class="text">
+              <h3 class="feutures-list__title">Планирование</h3>
+              <p class="feutures-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="list-item">
-              <div class="feutures-item">
-                <svg class="feutures-icon" width="70" height="70">
+            <li class="feutures-list__item">
+              <div class="feutures-list__picture">
+                <svg class="feutures-list__icon" width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-cosmo"></use>
                 </svg>
               </div>
-              <h3 class="title">Современные технологии</h3>
-              <p class="text">
+              <h3 class="feutures-list__title">Современные технологии</h3>
+              <p class="feutures-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -569,17 +647,19 @@
           <address>
             <ul class="connections list">
               <li class="connections-item">
-                <a class="location" href="https://goo.gl/maps/iFR7mdd8a6cbfwRv7"
+                <a
+                  class="connections__link location"
+                  href="https://goo.gl/maps/iFR7mdd8a6cbfwRv7"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="connections-item">
-                <a class="mail" href="mailto:info@example.com"
+                <a class="connections__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="connections-item">
-                <a class="tel-number" href="tel:+380961111111"
+                <a class="connections__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -608,7 +688,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="ссылка на instagram"
+                aria-label="ссылка на twitter"
               >
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-twitter"></use>
@@ -621,7 +701,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="ссылка на instagram"
+                aria-label="ссылка на facebook"
               >
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-facebook"></use>
@@ -634,7 +714,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="ссылка на instagram"
+                aria-label="ссылка на linkedin"
               >
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-linkedin"></use>
@@ -642,6 +722,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
+          <h3 class="title">Подпишитесь на рассылку</h3>
+          <form class="subscr-form">
+            <label class="form-label">
+              <input
+                class="form-input"
+                placeholder="E-mail"
+                type="email"
+                name="user-mail"
+                autocomplete="email"
+              />
+            </label>
+            <button class="btn" type="submit">
+              <span class="text">Подписаться</span>
+              <svg width="24" height="24">
+                <use href="/images/icons/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

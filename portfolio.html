@@ -21,40 +21,44 @@
   </head>
   <body>
     <header class="page-header bottom-line">
-      <div class="container page-item">
+      <div class="container page-header__container">
         <a class="logo" lang="en" href="./index.html"
-          >Web<span class="studio">Studio</span></a
+          >Web<span class="logo--black">Studio</span></a
         >
 
-        <nav class="main-nav">
+        <nav class="header-nav">
           <ul class="site-nav list">
-            <li class="item">
-              <a class="link" href="./index.html">Студия</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="social-icon" width="20" height="20">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="20" height="20">
                 <use href="./images/icons/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111"
-              ><svg class="social-icon" width="20" height="20">
-                <use href="./images/icons/icons.svg#icon-tel">
-
-                </use>
-                </svg>+38 096 111 11 11
-              </a
-            >
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="20" height="20">
+                <use href="./images/icons/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -63,7 +67,7 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 class="page-filter-title visually-hidden">Наши работы</h1>
+          <h1 class="page-filter-title hidden">Наши работы</h1>
           <ul class="filter list">
             <li class="item"><button class="btn" type="button">Все</button></li>
             <li class="item">
@@ -80,7 +84,7 @@
             </li>
           </ul>
 
-          <h1 class="page-examples-title visually-hidden">Примеры работ</h1>
+          <h1 class="page-examples-title hidden">Примеры работ</h1>
 
           <ul class="examples list grid">
             <li class="item grid-item">
@@ -98,9 +102,8 @@
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
-                  
                 </div>
-                
+
                 <div class="text-group">
                   <h2 class="title">Технокряк</h2>
                   <p class="text">Веб-сайт</p>
@@ -109,19 +112,16 @@
             </li>
 
             <li class="item grid-item">
-              <a class="link" href=""
-                >
-                <div class="examp-picture"><img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe2.jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+              <a class="link" href="">
+                <div class="examp-picture">
+                  <img
+                    class="picture"
+                    src="./images/portfolio-examples/exampe2.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Постер New Orlean vs Golden Star</h2>
                   <p class="text">Дизайн</p>
@@ -129,19 +129,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
-                <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe3.jpg"
-                  alt="Ресторан Seafood"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                  <img
+                    class="picture"
+                    src="./images/portfolio-examples/exampe3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Ресторан Seafood</h2>
                   <p class="text">Приложение</p>
@@ -149,19 +146,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
                   <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe4.jpg"
-                  alt="Проект Prime"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                    class="picture"
+                    src="./images/portfolio-examples/exampe4.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Проект Prime</h2>
                   <p class="text">Маркетинг</p>
@@ -169,19 +163,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
                   <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe5.jpg"
-                  alt="Проект Boxes"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                    class="picture"
+                    src="./images/portfolio-examples/exampe5.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Проект Boxes</h2>
                   <p class="text">Приложение</p>
@@ -189,19 +180,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
                   <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe6.jpg"
-                  alt="Inspiration has no Borders"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                    class="picture"
+                    src="./images/portfolio-examples/exampe6.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Inspiration has no Borders</h2>
                   <p class="text">Веб-сайт</p>
@@ -209,19 +197,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
                   <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe7.jpg"
-                  alt="Издание Limited Edition"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                    class="picture"
+                    src="./images/portfolio-examples/exampe7.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Издание Limited Edition</h2>
                   <p class="text">Дизайн</p>
@@ -229,19 +214,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
                   <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe8.jpg"
-                  alt="Проект LAB"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                    class="picture"
+                    src="./images/portfolio-examples/exampe8.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Проект LAB</h2>
                   <p class="text">Маркетинг</p>
@@ -249,19 +231,16 @@
               </a>
             </li>
             <li class="item grid-item">
-              <a class="link" href=""
-                >
+              <a class="link" href="">
                 <div class="examp-picture">
                   <img
-                  class="picture"
-                  src="./images/portfolio-examples/exampe9.jpg"
-                  alt="Growing Business"
-                  width="370"
-                />
-                <p class="hidden-text">
-                  
-                </p>
-              </div>
+                    class="picture"
+                    src="./images/portfolio-examples/exampe9.jpg"
+                    alt="Growing Business"
+                    width="370"
+                  />
+                  <p class="hidden-text"></p>
+                </div>
                 <div class="text-group">
                   <h2 class="title">Growing Business</h2>
                   <p class="text">Приложение</p>
@@ -281,17 +260,19 @@
           <address>
             <ul class="connections list">
               <li class="connections-item">
-                <a class="location" href="https://goo.gl/maps/iFR7mdd8a6cbfwRv7"
+                <a
+                  class="connections__link location"
+                  href="https://goo.gl/maps/iFR7mdd8a6cbfwRv7"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="connections-item">
-                <a class="mail" href="mailto:info@example.com"
+                <a class="connections__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="connections-item">
-                <a class="tel-number" href="tel:+380961111111"
+                <a class="connections__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -320,7 +301,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="ссылка на instagram"
+                aria-label="ссылка на twitter"
               >
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-twitter"></use>
@@ -333,7 +314,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="ссылка на instagram"
+                aria-label="ссылка на facebook"
               >
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-facebook"></use>
@@ -346,7 +327,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="ссылка на instagram"
+                aria-label="ссылка на linkedin"
               >
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons/icons.svg#icon-linkedin"></use>
@@ -355,9 +336,27 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <h3 class="title">Подпишитесь на рассылку</h3>
+          <form class="subscr-form">
+            <label class="form-label">
+              <input
+                class="form-input"
+                placeholder="E-mail"
+                type="email"
+                name="user-mail"
+                autocomplete="email"
+              />
+            </label>
+            <button class="btn" type="submit">
+              <span class="text">Подписаться</span>
+              <svg width="24" height="24">
+                <use href="/images/icons/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    
   </body>
 </html>
-
